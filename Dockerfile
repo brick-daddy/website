@@ -1,8 +1,6 @@
-FROM apache-server-docker-demo 
-RUN apt-get install -y httpd
-RUN apt-get install -y httpd-utils
-EXPOSE 82
-ENTRYPOINT [httpdctl]
-CMD [".DFOREGROUND"]
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y apache2
+ADD ./var/www/html
 
 
