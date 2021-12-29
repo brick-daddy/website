@@ -1,3 +1,3 @@
-FROM /home/ubuntu/apache-server-docker-demo
-ADD ./var/www/html
+FROM hshar/webpp
+ADD . /var/www/html
 
